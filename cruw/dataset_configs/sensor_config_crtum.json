@@ -1,0 +1,51 @@
+{
+  "dataset": "CRTUM",
+  "camera_cfg": {
+    "image_width": 960,
+    "image_height": 540,
+    "frame_rate": 15,
+    "image_folder": "IMAGES_0",
+    "ext": "png"
+  },
+  "radar_cfg": {
+    "ramap_rsize": 224,
+    "ramap_asize": 221,
+    "frame_rate": 15,
+    "crop_num": 3,
+    "n_chirps": 255,
+    "sample_freq": 10e6,
+    "sweep_slope": 40.024e12,
+    "data_type": "AP",
+    "chirp_folder": "RADAR_RA_H",
+    "ext": "npy",
+    "ra_min_label": -60,
+    "ra_max_label": 60,
+    "rr_min": 1.0,
+    "rr_max": 33.7,
+    "ra_min": -90,
+    "ra_max": 90,
+    "xz_dim": [224, 256],
+    "z_max": 33.7
+  },
+  "calib_cfg": {
+    "cam_calib_paths": {
+      "2019_04_09": [
+        "calib/2019_05_09/left.yaml"
+      ],
+      "2019_05_29": [
+        "calib/2019_05_09/left.yaml"
+      ],
+      "2019_09_29": [
+        "calib/2019_09_29/left.yaml",
+        "calib/2019_09_29/right.yaml"
+      ],
+      "2019_10_13": [
+        "calib/2019_09_29/left.yaml",
+        "calib/2019_09_29/right.yaml"
+      ]
+    },
+    "t_cl2cr": [0.35, 0.0, 0.0],
+    "t_cl2rh": [0.11, -0.05, 0.06],
+    "t_cl2rv": [0.21, -0.05, 0.06]
+  }
+}
