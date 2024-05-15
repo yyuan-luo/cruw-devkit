@@ -13,6 +13,7 @@
     "frame_rate": 15,
     "crop_num": 3,
     "n_chirps": 255,
+    "chirp_ids": [0],
     "sample_freq": 10e6,
     "sweep_slope": 40.024e12,
     "data_type": "AP",

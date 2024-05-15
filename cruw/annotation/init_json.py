@@ -9,7 +9,7 @@ FOLDER_NAME_DICT = dict(
 )
 
 
-def init_anno_json(seq_name, n_frames, dataset='CRUW', fps=30, sensors=None, view=None, setup=None):
+def init_anno_json(seq_name, n_frames, dataset='CRTUM', fps=15, sensors=None, view=None, setup=None):
     json_dict = dict(
         dataset=dataset,
         date_collect=seq_name[:10],
@@ -25,8 +25,8 @@ def init_anno_json(seq_name, n_frames, dataset='CRUW', fps=30, sensors=None, vie
 
 
 def init_meta_json(n_frames, folder_name_dict=FOLDER_NAME_DICT,
-                   imwidth=1440, imheight=864,
-                   rarange=128, raazimuth=128, n_chirps=255):
+                   imwidth=960, imheight=540,
+                   rarange=224, raazimuth=221, n_chirps=255):
     meta_all = []
     for frame_id in range(n_frames):
         meta_dict = dict(frame_id=frame_id)
