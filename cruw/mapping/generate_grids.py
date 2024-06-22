@@ -24,7 +24,7 @@ def confmap2ra(radar_configs, name, radordeg='rad'):
         freq_res = Fs / fft_Rang
         freq_grid = np.arange(fft_Rang) * freq_res
         rng_grid = freq_grid * c / sweepSlope / 2
-        rng_grid = rng_grid[num_crop:fft_Rang - num_crop]
+        rng_grid = rng_grid[num_crop_near: fft_Rang - num_crop_rear]
         return rng_grid
 
     if name == 'angle':
