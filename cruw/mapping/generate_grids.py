@@ -14,8 +14,9 @@ def confmap2ra(radar_configs, name, radordeg='rad'):
     # TODO: add more args for different network settings
     Fs = radar_configs['sample_freq']
     sweepSlope = radar_configs['sweep_slope']
-    num_crop = radar_configs['crop_num']
-    fft_Rang = radar_configs['ramap_rsize'] + 2 * num_crop
+    num_crop_near = radar_configs['crop_num_near']
+    num_crop_rear = radar_configs['crop_num_rear']
+    fft_Rang = radar_configs['ramap_rsize'] + num_crop_near + num_crop_rear
     fft_Ang = radar_configs['ramap_asize']
     c = scipy.constants.speed_of_light
 
